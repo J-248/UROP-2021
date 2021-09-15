@@ -1,0 +1,101 @@
+<launch>
+  <node 
+    name="arm_pose" 
+    pkg="turtlebot2i_water" 
+    type="arm_pose.py" 
+    respawn="false"
+    output="screen" >  
+    <!-- <remap 
+      from="/" 
+      to="/arm_controller/command"/>  -->
+
+  </node>
+
+  <!-- <rosparam file="$(find myrobot_moveit_config)/config/my_controllers.yaml"/> -->
+</launch>
+
+<!-- 
+/arm_bicep_joint/command
+/arm_controller/command
+/arm_controller/follow_joint_trajectory/cancel
+/arm_controller/follow_joint_trajectory/feedback
+/arm_controller/follow_joint_trajectory/goal
+/arm_controller/follow_joint_trajectory/result
+/arm_controller/follow_joint_trajectory/status
+/arm_forearm_joint/command
+/arm_shoulder_pan_joint/command
+/arm_wrist_flex_joint/command 
+/execute_trajectory/cancel
+/execute_trajectory/feedback
+/execute_trajectory/goal
+/execute_trajectory/result
+/execute_trajectory/status
+/gripper_controller/gripper_action/cancel
+/gripper_controller/gripper_action/feedback
+/gripper_controller/gripper_action/goal
+/gripper_controller/gripper_action/result
+/gripper_controller/gripper_action/status
+/gripper_joint/command
+/joint_states
+/move_base/DWAPlannerROS/cost_cloud
+/move_base/DWAPlannerROS/global_plan
+/move_base/DWAPlannerROS/local_plan
+/move_base/DWAPlannerROS/parameter_descriptions
+/move_base/DWAPlannerROS/parameter_updates
+/move_base/DWAPlannerROS/trajectory_cloud
+/move_base/NavfnROS/plan
+/move_base/cancel
+/move_base/current_goal
+/move_base/feedback
+/move_base/global_costmap/costmap
+/move_base/global_costmap/costmap_updates
+/move_base/global_costmap/footprint
+/move_base/global_costmap/inflation_layer/parameter_descriptions
+/move_base/global_costmap/inflation_layer/parameter_updates
+/move_base/global_costmap/obstacle_layer/clearing_endpoints
+/move_base/global_costmap/obstacle_layer/parameter_descriptions
+/move_base/global_costmap/obstacle_layer/parameter_updates
+/move_base/global_costmap/parameter_descriptions
+/move_base/global_costmap/parameter_updates
+/move_base/global_costmap/static_layer/parameter_descriptions
+/move_base/global_costmap/static_layer/parameter_updates
+/move_base/goal
+/move_base/local_costmap/costmap
+/move_base/local_costmap/costmap_updates
+/move_base/local_costmap/footprint
+/move_base/local_costmap/inflation_layer/parameter_descriptions
+/move_base/local_costmap/inflation_layer/parameter_updates
+/move_base/local_costmap/obstacle_layer/clearing_endpoints
+/move_base/local_costmap/obstacle_layer/parameter_descriptions
+/move_base/local_costmap/obstacle_layer/parameter_updates
+/move_base/local_costmap/parameter_descriptions
+/move_base/local_costmap/parameter_updates
+/move_base/parameter_descriptions
+/move_base/parameter_updates
+/move_base/recovery_status
+/move_base/result
+/move_base/status
+/move_base_simple/goal
+/move_group/cancel
+/move_group/display_contacts
+/move_group/display_cost_sources
+/move_group/display_grasp_markers
+/move_group/display_planned_path
+/move_group/feedback
+/move_group/filtered_cloud
+/move_group/goal
+/move_group/monitored_planning_scene
+/move_group/motion_plan_request
+/move_group/ompl/parameter_descriptions
+/move_group/ompl/parameter_updates
+/move_group/plan_execution/parameter_descriptions
+/move_group/plan_execution/parameter_updates
+/move_group/planning_scene_monitor/parameter_descriptions
+/move_group/planning_scene_monitor/parameter_updates
+/move_group/result
+/move_group/sense_for_plan/parameter_descriptions
+/move_group/sense_for_plan/parameter_updates
+/move_group/status
+/move_group/trajectory_execution/parameter_descriptions
+/move_group/trajectory_execution/parameter_updates
+-->

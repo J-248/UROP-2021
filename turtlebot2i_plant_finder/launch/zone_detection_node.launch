@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+	<node name="plant_detection_node" pkg="turtlebot2i_plant_finder" type="plant_detection_node" output="screen">
+		<rosparam param="plant_offset_x">1.0</rosparam>
+ 	</node>
+</launch>

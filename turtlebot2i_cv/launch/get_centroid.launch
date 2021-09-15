@@ -1,0 +1,8 @@
+<launch>
+
+  	<node name="get_centroid"
+        pkg="turtlebot2i_cv"
+        type="get_centroid"
+        output="screen"/>
+
+</launch>
